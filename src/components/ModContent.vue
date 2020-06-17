@@ -63,7 +63,7 @@
             uploadStatement: function () {
                 console.log(this.statement.id);
                 console.log(this.statement.text);
-                instance.post(this.$hostname + "game/statement", {
+                instance.post(this.$hostname + "/game/statement", {
                     "text": this.game.text,
                     "type": this.game.type
                 })
