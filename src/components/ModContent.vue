@@ -59,7 +59,7 @@
                 console.log(this.statement.id);
                 console.log(this.statement.text);
                 instance.delete(this.$hostname + "/admin/submitted/statement/"+this.statement.id,{
-                    headers: {"api-key": "01698023-6440-4f98-b9bc-ee4ce3b103f2"
+                    headers: {"apikey": "01698023-6440-4f98-b9bc-ee4ce3b103f2"
                     }
                 })
                 .then(response => console.log(response))
