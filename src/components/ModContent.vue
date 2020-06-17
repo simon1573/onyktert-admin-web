@@ -22,7 +22,7 @@
             game: Number
         },
         watch: {
-            game: function (newVal, oldVal) { // watch it
+            game: function (newVal, oldVal) {
                 console.log('Prop changed: ', newVal, ' | was: ', oldVal)
                 this.loadData()
             }
@@ -31,7 +31,7 @@
             return {
                 indexCounter: 0,
                 statement: {
-                    id: -1,
+                    id: "",
                     text: "",
                     type: "",
                     createdDate: ""
