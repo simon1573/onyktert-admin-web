@@ -58,12 +58,15 @@
             deleteStatement: function () {
                 console.log(this.statement.id);
                 console.log(this.statement.text);
-                instance.delete(this.$hostname + "/admin/submitted/statement/"+this.statement.id)
-                    .then(response => console.log(response))
-                    .catch(function (error) {
-                        console.log(error);
-                        alert("Failed to delete statement!")
-                    });
+                instance.delete(this.$hostname + "/admin/submitted/statement/"+this.statement.id,{
+                    headers: {"api-key": "01698023-6440-4f98-b9bc-ee4ce3b103f2"
+                    }
+                })
+                .then(response => console.log(response))
+                .catch(function (error) {
+                    console.log(error);
+                    alert("Failed to delete statement!")
+                });
                 this.loadData();
             },
             uploadStatement: function () {
