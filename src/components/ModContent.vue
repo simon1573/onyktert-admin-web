@@ -58,7 +58,7 @@
             deleteStatement: function () {
                 console.log(this.statement.id);
                 console.log(this.statement.text);
-                instance.delete(this.$hostname + "admin/submitted/statement/"+this.statement.id)
+                instance.delete(this.$hostname + "/admin/submitted/statement/"+this.statement.id)
                     .then(response => console.log(response))
                     .catch(function (error) {
                         console.log(error);
