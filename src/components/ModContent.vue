@@ -64,8 +64,8 @@
                 console.log(this.statement.id);
                 console.log(this.statement.text);
                 instance.post(this.$hostname + "/game/statement", {
-                    "text": this.game.text,
-                    "type": this.game.type
+                    "text": this.statement.text,
+                    "type": this.statement.type
                 })
                     .then(response => this.deleteStatement(response))
                     .catch(function (error) {
